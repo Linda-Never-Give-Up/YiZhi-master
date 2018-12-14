@@ -48,7 +48,7 @@ android {
                     if (!variant.buildType.isDebuggable()) {
                         //要被替换的源字符串
                         def sourceFile = "-${variant.flavorName}-${variant.buildType.name}"
-                        // 替换的字符串
+                        //替换的字符串
                         def replaceFile = "YiZhi_${variant.flavorName}_${variant.versionName}_${variant.buildType.name}_${buildTime()}"
                         outputFileName = output.outputFile.name.replace(sourceFile, replaceFile);
                     }
